@@ -23,17 +23,5 @@ public class SalesRoutes {
         return saleRepo.findAll();
     }
 
-//    @Bean
-//    public RouterFunction<ServerResponse> getAllSales(){
-//        return route(GET("sales/get/all"), request ->
-//                ServerResponse.ok()
-//                        .body(BodyInserters.fromPublisher(saleRepo.findAll(), Sales.class)));
-//    }
-//    @Bean
-//    public RouterFunction<ServerResponse> getSaleById(){
-//        return route(GET("sales/{id}"), request ->
-//                ServerResponse.ok()
-//                        .body(BodyInserters.fromPublisher(saleRepo.findById(request.pathVariable("id")), Sales.class)));
-//    }
 
 }
